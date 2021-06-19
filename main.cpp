@@ -1,6 +1,6 @@
 #include <iostream>
 #include "investimento.h"
-
+#include <math.h>
 using namespace std;
 
 int main() {
@@ -45,7 +45,7 @@ switch (menu) {
  cout << Simples(vInicial, taxa, tempo);
     break;
   }
-  case '0': {
+  case '3': {
     cout<<"Encerrando...\n\n";
     tela=1;
  }
