@@ -42,7 +42,7 @@ switch (menu) {
   cout << "Digite a taxa anual: "; cin >> taxa;
   cout << "Digite o tempo de aplicacao em anos: "; cin >> tempo;
 
- cout << Simples(vInicial, taxa, tempo);
+ cout << Composto(vInicial, taxa, tempo);
     break;
   }
   case '3': {
