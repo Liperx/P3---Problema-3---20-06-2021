@@ -4,7 +4,7 @@
 
 using namespace std;
 
-float simples(float principal, float taxa, float anos)
+float Simples(float principal, float taxa, float anos)
 { 
   taxa = taxa / 100; //transformando pra usar nas contas
   float juros = principal * taxa * anos;
@@ -14,7 +14,7 @@ float simples(float principal, float taxa, float anos)
   cout << "O montante a ser pago é: " << montante << "\n\n";
   return EXIT_SUCCESS;
 }
-float composto(float principal, float taxa, float anos)
+float Composto(float principal, float taxa, float anos)
 { 
   taxa = taxa / 100; //transformando pra usar nas contas
   float juros = principal * taxa * anos;

@@ -4,16 +4,8 @@
 using namespace std;
 
 int main() {
-  float vInicial=0, taxa=0, tempo=0;
-  
-  cout << "Digite o capital inicial: R$"; cin >> vInicial;
-  cout << "Digite a taxa anual: "; cin >> taxa;
-  cout << "Digite o tempo de aplicacao em anos: "; cin >> tempo;
-
- cout << simples(vInicial, taxa, tempo);
-
- char menu, opmenu;
- int tela;
+char menu, opmenu;
+int tela;
 
 do{
 tela=0;
@@ -29,13 +21,28 @@ cout<<"DIGITE UMA OPÇÃO DESEJADA\n";
 menu=getchar();
 switch (menu) {
   case '1': {
-    simples();
+    Simples();
     opmenu=getchar();
+
+    float vInicial=0, taxa=0, tempo=0;
+  
+  cout << "Digite o capital inicial: R$"; cin >> vInicial;
+  cout << "Digite a taxa anual: "; cin >> taxa;
+  cout << "Digite o tempo de aplicacao em anos: "; cin >> tempo;
+
+ cout << Simples(vInicial, taxa, tempo);
     break;
   }
   case '2': {
-    composto();
+    Composto();
     opmenu=getchar();
+    float vInicial=0, taxa=0, tempo=0;
+  
+  cout << "Digite o capital inicial: R$"; cin >> vInicial;
+  cout << "Digite a taxa anual: "; cin >> taxa;
+  cout << "Digite o tempo de aplicacao em anos: "; cin >> tempo;
+
+ cout << Simples(vInicial, taxa, tempo);
     break;
   }
   case '0': {
